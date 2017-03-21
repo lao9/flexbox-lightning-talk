@@ -1,0 +1,136 @@
+*{
+    font-family: verdana;
+    margin: 0;
+    color: white;
+    text-align: center;
+    line-height: 98px;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.separator{
+  flex-grow: 1;
+}
+
+/* Using Float to Position */
+
+.non-flex-container{
+  background: black;
+}
+
+.non-flex-container:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.box1 {
+  height: 100px;
+  min-width: 100px;
+  float: left;
+}
+
+.one{
+  background: red;
+}
+
+.two {
+  background: blue;
+}
+
+.three{
+  background: green;
+}
+
+/* Using Basic Flexbox */
+
+.flex-container{
+  background: black;
+  display: flex;
+  //flex-direction:row-reverse;
+  //flex-direction:column;
+  //justify-content: center;
+  //justify-content: flex-end;
+  //justify-content: space-between;
+  //justify-content: space-around;
+}
+
+.box2 {
+  height: 100px;
+  min-width: 100px;
+}
+
+/* Using Flexbox Equal Growth Rate */
+
+.box3 {
+  height: 100px;
+  min-width: 100px;
+  flex-grow: 1;
+}
+
+/* Using Flexbox Unequal Growth Rate */
+
+.four{
+  background: blue;
+  flex-grow: 2;
+}
+
+.five{
+  background: green;
+  flex-grow: 3;
+}
+
+.six{
+  background: red;
+  flex-grow: 1;
+}
+
+/* Using Flexbox Equal Shrink Rate */
+
+.box4{
+  height: 100px;
+  width: 320px;
+  flex-shrink: 1;
+}
+
+/* Using Flexbox Unequal Shrink Rate */
+
+.box5{
+  height: 100px;
+  width: 320px;
+}
+
+.seven{
+  background: blue;
+  flex-shrink: 1;
+}
+
+.eight{
+  background: green;
+  flex-shrink: 2;
+}
+
+.nine{
+  background: red;
+  flex-shrink: 3;
+}
+
+/* Using Flexbox Wrap */
+
+.flex-wrap-container{
+  display: flex;
+  background: black;
+  flex-wrap: wrap;
+}
+
+/* Using Flexbox Reverse Wrap */
+
+.flex-wrap-reverse-container{
+  display: flex;
+  background: black;
+  flex-wrap: wrap-reverse;
+}
